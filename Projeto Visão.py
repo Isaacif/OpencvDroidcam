@@ -4,9 +4,9 @@ BLUE_COLOR = (255, 0, 0)
 STROKE = 2
 
 
-clf = cv2.CascadeClassifier('C:/Users/ROBERTO/Desktop/Isaac/haarcascade_frontalface_alt.xml')
+clf = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml') #pode ser alterado para outro algoritmo
 
-stream = cv2.VideoCapture('http://192.168.11.3:4747/video.jpg')
+stream = cv2.VideoCapture('http://192.168******/video.jpg') #endereço de ip pessoal da rede (Obtido pelo aplicativo DroidCam)
 
 while(not cv2.waitKey(20) & 0xFF == ord('q')):
 
